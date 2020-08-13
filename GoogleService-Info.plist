@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1047075940997-akun5ljrb4ofo9flu71u1jmgdcernh6c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1047075940997-akun5ljrb4ofo9flu71u1jmgdcernh6c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDzkX5Tlone0CXZkOqbd-EvORJ4bz1u7d4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1047075940997</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.QuentinMarlas.Lio</string>
+	<key>PROJECT_ID</key>
+	<string>lioapp-c4af4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lioapp-c4af4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1047075940997:ios:5dc35f9cff78ff4bd6d7ec</string>
+	<key>DATABASE_URL</key>
+	<string>https://lioapp-c4af4.firebaseio.com</string>
+</dict>
+</plist>

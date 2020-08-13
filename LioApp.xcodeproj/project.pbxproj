@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2916013024DAA05F002F60DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916012F24DAA05F002F60DB /* AppDelegate.swift */; };
+		2916013224DAA05F002F60DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916013124DAA05F002F60DB /* SceneDelegate.swift */; };
+		2916013424DAA05F002F60DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916013324DAA05F002F60DB /* ViewController.swift */; };
+		2916013724DAA05F002F60DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2916013524DAA05F002F60DB /* Main.storyboard */; };
+		2916013924DAA061002F60DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2916013824DAA061002F60DB /* Assets.xcassets */; };
+		2916013C24DAA061002F60DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2916013A24DAA061002F60DB /* LaunchScreen.storyboard */; };
+		2916014824DAA165002F60DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2916014724DAA165002F60DB /* GoogleService-Info.plist */; };
+		2916014A24DAA2A7002F60DB /* FireBaseAuthentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916014924DAA2A7002F60DB /* FireBaseAuthentification.swift */; };
+		2916014C24DAA402002F60DB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916014B24DAA402002F60DB /* SignUpViewController.swift */; };
+		2916014E24DAA40C002F60DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916014D24DAA40C002F60DB /* LoginViewController.swift */; };
+		2916015024DAA417002F60DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916014F24DAA417002F60DB /* HomeViewController.swift */; };
+		2916015324DAAA3A002F60DB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916015224DAAA3A002F60DB /* Utilities.swift */; };
+		297073A524E5605F00A4BF5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297073A424E5605F00A4BF5B /* Constants.swift */; };
+		297073A924E569D300A4BF5B /* Beer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 297073A824E569D300A4BF5B /* Beer.mp4 */; };
+		C8859B5C656BE7A23C9FEFA3 /* Pods_LioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B12D5D78166D65E4BFF4983 /* Pods_LioApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B6DC12A206FAC31A9E629A /* Pods-LioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LioApp.debug.xcconfig"; path = "Target Support Files/Pods-LioApp/Pods-LioApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0B12D5D78166D65E4BFF4983 /* Pods_LioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E8D1CAA0B69A71456EA3DD /* Pods-LioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LioApp.release.xcconfig"; path = "Target Support Files/Pods-LioApp/Pods-LioApp.release.xcconfig"; sourceTree = "<group>"; };
+		2916012C24DAA05F002F60DB /* LioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2916012F24DAA05F002F60DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2916013124DAA05F002F60DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2916013324DAA05F002F60DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2916013624DAA05F002F60DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2916013824DAA061002F60DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2916013B24DAA061002F60DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2916013D24DAA061002F60DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2916014724DAA165002F60DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2916014924DAA2A7002F60DB /* FireBaseAuthentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseAuthentification.swift; sourceTree = "<group>"; };
+		2916014B24DAA402002F60DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2916014D24DAA40C002F60DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2916014F24DAA417002F60DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2916015224DAAA3A002F60DB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		297073A424E5605F00A4BF5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		297073A824E569D300A4BF5B /* Beer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beer.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2916012924DAA05F002F60DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8859B5C656BE7A23C9FEFA3 /* Pods_LioApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2916012324DAA05F002F60DB = {
+			isa = PBXGroup;
+			children = (
+				297073A724E567B000A4BF5B /* Media */,
+				2916015124DAAA2D002F60DB /* Helpers */,
+				2916014624DAA088002F60DB /* Supporting Files */,
+				2916014524DAA081002F60DB /* Controller */,
+				2916014424DAA077002F60DB /* View */,
+				2916014324DAA072002F60DB /* Model */,
+				2E29C1159676A366C71543E0 /* Frameworks */,
+				2916012D24DAA05F002F60DB /* Products */,
+				51503433BC7EBCE33E45F7C3 /* Pods */,
+				2916012E24DAA05F002F60DB /* LioApp */,
+				2916014724DAA165002F60DB /* GoogleService-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		2916012D24DAA05F002F60DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2916012C24DAA05F002F60DB /* LioApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2916012E24DAA05F002F60DB /* LioApp */ = {
+			isa = PBXGroup;
+			children = (
+				2916013124DAA05F002F60DB /* SceneDelegate.swift */,
+				2916012F24DAA05F002F60DB /* AppDelegate.swift */,
+				2916013D24DAA061002F60DB /* Info.plist */,
+			);
+			path = LioApp;
+			sourceTree = "<group>";
+		};
+		2916014324DAA072002F60DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2916014924DAA2A7002F60DB /* FireBaseAuthentification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2916014424DAA077002F60DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2916013A24DAA061002F60DB /* LaunchScreen.storyboard */,
+				2916013524DAA05F002F60DB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2916014524DAA081002F60DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2916013324DAA05F002F60DB /* ViewController.swift */,
+				2916014B24DAA402002F60DB /* SignUpViewController.swift */,
+				2916014D24DAA40C002F60DB /* LoginViewController.swift */,
+				2916014F24DAA417002F60DB /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2916014624DAA088002F60DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2916013824DAA061002F60DB /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2916015124DAAA2D002F60DB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2916015224DAAA3A002F60DB /* Utilities.swift */,
+				297073A424E5605F00A4BF5B /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		297073A724E567B000A4BF5B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				297073A824E569D300A4BF5B /* Beer.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		2E29C1159676A366C71543E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B12D5D78166D65E4BFF4983 /* Pods_LioApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51503433BC7EBCE33E45F7C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B6DC12A206FAC31A9E629A /* Pods-LioApp.debug.xcconfig */,
+				25E8D1CAA0B69A71456EA3DD /* Pods-LioApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2916012B24DAA05F002F60DB /* LioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2916014024DAA061002F60DB /* Build configuration list for PBXNativeTarget "LioApp" */;
+			buildPhases = (
+				7F99AF298865108F7D3BA6DF /* [CP] Check Pods Manifest.lock */,
+				2916012824DAA05F002F60DB /* Sources */,
+				2916012924DAA05F002F60DB /* Frameworks */,
+				2916012A24DAA05F002F60DB /* Resources */,
+				EA53BD487649F0A69228F487 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LioApp;
+			productName = LioApp;
+			productReference = 2916012C24DAA05F002F60DB /* LioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2916012424DAA05F002F60DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Quentin Marlas";
+				TargetAttributes = {
+					2916012B24DAA05F002F60DB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 2916012724DAA05F002F60DB /* Build configuration list for PBXProject "LioApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2916012324DAA05F002F60DB;
+			productRefGroup = 2916012D24DAA05F002F60DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2916012B24DAA05F002F60DB /* LioApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2916012A24DAA05F002F60DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2916013C24DAA061002F60DB /* LaunchScreen.storyboard in Resources */,
+				297073A924E569D300A4BF5B /* Beer.mp4 in Resources */,
+				2916014824DAA165002F60DB /* GoogleService-Info.plist in Resources */,
+				2916013924DAA061002F60DB /* Assets.xcassets in Resources */,
+				2916013724DAA05F002F60DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F99AF298865108F7D3BA6DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LioApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA53BD487649F0A69228F487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LioApp/Pods-LioApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LioApp/Pods-LioApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LioApp/Pods-LioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2916012824DAA05F002F60DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2916014E24DAA40C002F60DB /* LoginViewController.swift in Sources */,
+				2916013424DAA05F002F60DB /* ViewController.swift in Sources */,
+				2916014A24DAA2A7002F60DB /* FireBaseAuthentification.swift in Sources */,
+				2916013024DAA05F002F60DB /* AppDelegate.swift in Sources */,
+				2916013224DAA05F002F60DB /* SceneDelegate.swift in Sources */,
+				2916015024DAA417002F60DB /* HomeViewController.swift in Sources */,
+				2916015324DAAA3A002F60DB /* Utilities.swift in Sources */,
+				2916014C24DAA402002F60DB /* SignUpViewController.swift in Sources */,
+				297073A524E5605F00A4BF5B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2916013524DAA05F002F60DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2916013624DAA05F002F60DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2916013A24DAA061002F60DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2916013B24DAA061002F60DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2916013E24DAA061002F60DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2916013F24DAA061002F60DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2916014124DAA061002F60DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B6DC12A206FAC31A9E629A /* Pods-LioApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G4HMUPVL;
+				INFOPLIST_FILE = LioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QuentinMarlas.LioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2916014224DAA061002F60DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E8D1CAA0B69A71456EA3DD /* Pods-LioApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G4HMUPVL;
+				INFOPLIST_FILE = LioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QuentinMarlas.LioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2916012724DAA05F002F60DB /* Build configuration list for PBXProject "LioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2916013E24DAA061002F60DB /* Debug */,
+				2916013F24DAA061002F60DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2916014024DAA061002F60DB /* Build configuration list for PBXNativeTarget "LioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2916014124DAA061002F60DB /* Debug */,
+				2916014224DAA061002F60DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2916012424DAA05F002F60DB /* Project object */;
+}
