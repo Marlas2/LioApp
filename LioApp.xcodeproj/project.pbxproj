@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290E461924E5DB8000E60423 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E461824E5DB8000E60423 /* CoreLocation.framework */; };
+		290E461B24E5DC2700E60423 /* LioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E461A24E5DC2700E60423 /* LioViewController.swift */; };
+		290E461D24E5DC3300E60423 /* SamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E461C24E5DC3300E60423 /* SamViewController.swift */; };
 		2916013024DAA05F002F60DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916012F24DAA05F002F60DB /* AppDelegate.swift */; };
 		2916013224DAA05F002F60DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916013124DAA05F002F60DB /* SceneDelegate.swift */; };
 		2916013424DAA05F002F60DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916013324DAA05F002F60DB /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 		01B6DC12A206FAC31A9E629A /* Pods-LioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LioApp.debug.xcconfig"; path = "Target Support Files/Pods-LioApp/Pods-LioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		0B12D5D78166D65E4BFF4983 /* Pods_LioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E8D1CAA0B69A71456EA3DD /* Pods-LioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LioApp.release.xcconfig"; path = "Target Support Files/Pods-LioApp/Pods-LioApp.release.xcconfig"; sourceTree = "<group>"; };
+		290E461824E5DB8000E60423 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		290E461A24E5DC2700E60423 /* LioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LioViewController.swift; sourceTree = "<group>"; };
+		290E461C24E5DC3300E60423 /* SamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamViewController.swift; sourceTree = "<group>"; };
 		2916012C24DAA05F002F60DB /* LioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2916012F24DAA05F002F60DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2916013124DAA05F002F60DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290E461924E5DB8000E60423 /* CoreLocation.framework in Frameworks */,
 				C8859B5C656BE7A23C9FEFA3 /* Pods_LioApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +124,8 @@
 				2916014B24DAA402002F60DB /* SignUpViewController.swift */,
 				2916014D24DAA40C002F60DB /* LoginViewController.swift */,
 				2916014F24DAA417002F60DB /* HomeViewController.swift */,
+				290E461A24E5DC2700E60423 /* LioViewController.swift */,
+				290E461C24E5DC3300E60423 /* SamViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 		2E29C1159676A366C71543E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				290E461824E5DB8000E60423 /* CoreLocation.framework */,
 				0B12D5D78166D65E4BFF4983 /* Pods_LioApp.framework */,
 			);
 			name = Frameworks;
@@ -281,9 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2916014E24DAA40C002F60DB /* LoginViewController.swift in Sources */,
+				290E461B24E5DC2700E60423 /* LioViewController.swift in Sources */,
 				2916013424DAA05F002F60DB /* ViewController.swift in Sources */,
 				2916014A24DAA2A7002F60DB /* FireBaseAuthentification.swift in Sources */,
 				2916013024DAA05F002F60DB /* AppDelegate.swift in Sources */,
+				290E461D24E5DC3300E60423 /* SamViewController.swift in Sources */,
 				2916013224DAA05F002F60DB /* SceneDelegate.swift in Sources */,
 				2916015024DAA417002F60DB /* HomeViewController.swift in Sources */,
 				2916015324DAAA3A002F60DB /* Utilities.swift in Sources */,
