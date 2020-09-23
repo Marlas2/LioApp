@@ -8,23 +8,37 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
-
+final class SignInViewController: UIViewController {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    // MARK: - Properties
+    
+    private let authService: AuthService = AuthService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
-    */
-
+    
+    
+    @IBAction func signInButtonTapped(_ sender: UIButton) {
+        
+        guard let login = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+        guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+        authService.signIn(email: login, password: password) { isSuccess in
+            if isSuccess {
+                self.dismiss(animated: true)
+            }
+        }
+    }
+    @IBAction private func unwindToSignInViewController(_ segue: UIStoryboardSegue) { dismiss(animated: false)
+    }
 }

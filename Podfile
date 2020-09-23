@@ -7,10 +7,8 @@ target 'LioApp' do
 
   # Pods for LioApp
 
-	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
-	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
-	pod 'AVKit'
+	pod ‘GeoFire’, :git => ‘https://github.com/firebase/geofire-objc.git'
 
 end

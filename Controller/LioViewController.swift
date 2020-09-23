@@ -6,10 +6,15 @@
 //  Copyright © 2020 Quentin Marlas. All rights reserved.
 //
 
+import MapKit
 import UIKit
 
 class LioViewController: UIViewController {
 
+    @IBOutlet weak var lioMapView: MKMapView!
+    
+    var location = SignUpViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +22,9 @@ class LioViewController: UIViewController {
     }
     
 
+    @IBAction func getSamButtonTapped(_ sender: UIButton) {
+
+    }
     /*
     // MARK: - Navigation
 

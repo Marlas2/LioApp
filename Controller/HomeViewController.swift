@@ -8,23 +8,44 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
+    
+    // MARK: - Outlets
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    // MARK: - Properties
+    
+    private let authService: AuthService = AuthService()
+    private let dataBaseManager: DatabaseManager = DatabaseManager()
+    
+    // MARK: - Initialization
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        bindUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logoutButtonTapped(_ sender: UIBarButtonItem) {
+        authService.signOut { isSuccess in
+            if !isSuccess {
+                // Present an alert
+            }
+        }
     }
-    */
-
+    
+    // MARK: - Methods
+    
+    private func bindUI() {
+        guard let uid = authService.currentUID else { return }
+        dataBaseManager.getUserData(with: uid) { [unowned self] result in
+            switch result {
+            case .success(let userData):
+                guard let userName: String = userData["username"] as? String else { return }
+                self.userNameLabel.text = userName
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
